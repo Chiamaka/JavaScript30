@@ -33,7 +33,8 @@ submitBtn.addEventListener('click', function () {
 });
 
 resultBtn.addEventListener('click', () => {
-    const show = document.getElementById('showResults');
-    show.style.display = 'inline';
-    show.textContent = calcInstance.allResults();
+    const p = document.querySelector('#showResults p');
+    const h2 = document.querySelector('#showResults h2');
+    h2.style.display = 'block';
+    p.innerText = calcInstance.allResults();
 });
